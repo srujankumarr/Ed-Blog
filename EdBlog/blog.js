@@ -27,9 +27,7 @@ declarations.searchContainer.addEventListener('click', function (e) {
     window.location.hash = `#${id}`
 })
 declarations.shareBtn.addEventListener('click', function () {
-    const url = window.location.href + window.location.hash
-    console.log(url);
-    const title = 'Ed Blog';
-    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`;
+    const url = window.location.href
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(shareUrl, '_blank', 'width=600,height=400');
 })
