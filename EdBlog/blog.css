@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --font-size-small:16px;
+    --font-size-large:25px;
+    --font-size-medium:20px;
+    --background:#000000;
+    --background-items:#191c24;
+    --color:#ffffff;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: var(--font-size-small);
+  /* overflow: auto; */
+}
+.hidden{
+    display: none;
+}
+/* Light Mode  
+ .dark{
+    background-color:#eff0f6;
+}
+.dark-items{
+    background-color: #FFFFFF;
+    color: #000000;
+   
+}  */
+
+/* DarkMode */
+.dark{
+    background-color: var(--background);
+    color: var(--color);
+}
+.dark-items{
+    background-color: var(--background-items);
+    color: var(--color);
+}
+
+.container{
+    height: 100vh;
+}
+/* ---------------------------------------------------Header---------------------------------------------- */
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.search-field{
+    padding: 12px;
+    border-radius: 30px;
+    padding-left: 20px;
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid #2c2e33;
+}
+.search-field:focus{
+    outline: none; 
+}
+.search-field::placeholder{
+    font-size: var(--font-size-small);
+    color: var(--color);
+    font-weight: 500;
+}
+.person-logo{
+    width: 35px;
+}
+.search-btn{
+    padding: 13px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    position: absolute;
+    transform: translate(-79px,20px);
+    width:80px;
+    font-size: var(--font-size);
+}
+.heading{
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    
+}
+.header-btns{
+    display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn{
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: var(--font-size-medium);
+    padding: 8px;
+    border-radius: 10px;
+}
+.btn:hover{
+    transform: scale(1.25,1.25);
+    cursor: pointer;
+}
+.btn:active{
+    transform: translateY(2px);
+}
+/* --------------------------------------Font Buttons--------------------------------------- */
+.font-btn{
+    border: none; 
+}
+.font-btn-1{
+    font-size: 13px;
+}
+.font-btn-2{
+    font-size: 16px;
+}
+.font-btn-3{
+    font-size: 19px;
+}
+.font-btn-4{
+    font-size: 22px;
+}
+.font-btn:hover{
+    cursor: pointer;
+    transform: scale(1.25,1.25);
+}
+.font-btn:active{
+    transform: translateY(3px);
+}
+.font-btn-active{
+    border: 2px solid #2c2e33;
+    border-radius: 5px;
+}
+/* --------------------------------------Font Buttons--------------------------------------- */
+/* ---------------------------------------Header------------------------------------------  */
+
+/* Search Results  */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+.search-item{
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    width: 350px;
+    margin: 10px 10px 10px 0;
+}
+.search-item:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.search-item:active{
+    transform: translateY(2px);
+}
+.company-logo{
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+}
+.search-item-data{
+    margin-left: 20px;
+}
+.data{
+    margin: 0;
+}
+.pagination{
+    display: flex;
+    margin-left:10px ;
+    justify-content: space-around;
+}
+.btn-pages{
+    border: none;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+}
+.btn-pages:active{
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+/* Search Results  */
+
+/* Experience */
+.experience-data{
+    border-radius: 20px;
+    padding: 30px;
+    /* margin-right: 20px; */
+    width: 900px;
+}
+.personal-info{
+    display: flex;
+}
+.personal-data{
+    margin: 10px;
+}
+.logo-exp{
+    width: 100px;
+}
+.rounds-skills-criteria{
+    display: flex;
+}
+
+.rounds-exp{
+    display: grid;
+    grid-template-rows: 150px,150px;
+    grid-template-columns: 250px,250px;
+    gap: 5px;
+}
+#r2,#r4{
+    margin-left:50px ;
+}
+#r4{
+    grid-area: 2/2/2/2;
+}
+.question{
+    width: 300px;
+}
+.share-btn{
+    border: none;
+    background: none;
+    color: none;
+    float: right;
+}
+.share-btn-img{
+    width: 50px;
+}
+.share-btn:hover{
+    transform: scale(1.25,1.25);
+    cursor: pointer;
+}
+.share-btn:active{
+    transform: translateY(3px);
+}
+/* Experience  */
+.spinner{
+    width: 350px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner-img{
+    width:50px;
+    float: center;
+}
+
+.hidden-btns{
+    opacity: 0;
+}
+
+.error{
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-top: 150px;
+}
+.link{
+    text-decoration: none;
+}
+
+/* Form  */
+.input-container{
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.input-form{
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.input-field{
+    padding: 10px 16px;
+    border-radius: 15px;
+    border: 1px solid #2c2e33;
+    margin: 10px;
+}
+.input-field:focus{
+    transform: translateY(-5px);
+    outline: none;
+}
+.submit-btn{
+    border-radius: 15px;
+    border: 1px solid #2c2e33; 
+    padding: 10px 25px;
+    margin-left: 300px;
+}
+
+.submit-btn:hover{
+    transform: scale(1.25,1.25);
+    cursor: pointer;
+}
+.submit-btn:active{
+    transform: translateY(2px);
+}

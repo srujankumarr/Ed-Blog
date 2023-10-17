@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="shortcut icon" href="img/Edwisely.png" type="image/x-icon" />
+    <script type="module" src="blog.js"></script>
+</head>
+
+<body class="dark">
+    <div class="container dark">
+        <div class="header dark-items">
+
+            <p class="heading">EdBLOG</p>
+            <form action="">
+                <input type="text" class="search-field dark-items" placeholder="Search your preferred role">
+                <button type="submit" class="search-btn dark">Search</button>
+            </form>
+            <div class="header-btns">
+                <button class="btn dark-items btn-new-blog">New Blog</button>
+                <button class="btn  dark-items btn-mode-light">🔆Light</button>
+                <button class="btn dark-items  btn-mode-dark hidden">🌙DARK </button>
+                <div class="font-btns">
+                    <button class="font-btn-1  font-btn   dark-items">A</button>
+                    <button class="font-btn-2 font-btn font-btn-active dark-items">A</button>
+                    <button class="font-btn-3 font-btn  dark-items">A</button>
+                    <button class="font-btn-4 font-btn  dark-items">A</button>
+                </div>
+                <button class="btn dark-items btn-myblog">
+                    <img src="img/personlogo.png" alt="" class="person-logo">
+                </button>
+                <button class="share-btn hidden"><img class="share-btn-img" src="img/sharelogo.png" alt=""></button>
+            </div>
+        </div>
+        <div class="main dark">
+            <div class="search-results-container dark">
+
+                <ul type="none" class="results">
+                    <!-- <a href="#1234">
+                        <li class="search-item dark-items hidden">
+                            <p id="id" data-rid="" class="hidden"></p>
+                            <img class="company-logo" src="img/Edwisely.png" alt="">
+                            <div class="search-item-data">
+                                <p class="data company-name">EDWISELY (10CTC)</p>
+                                <p class="data company-role">Associate Software Engineer</p>
+                            </div>
+                        </li>
+                    </a> -->
+
+                </ul>
+                <div class="pagination ">
+                    <button class="dark-items prev btn-pages hidden-btns">← Page 1</button>
+                    <button class="dark-items next btn-pages hidden-btns">Page 2 →</button>
+                </div>
+            </div>
+            <div class="input-container dark-items hidden">
+                <!-- <form action="">
+                    <div class="input-form">
+                        <div class="input-col-1">
+                            <label>Name : </label>
+                            <input type="text" class="input-field dark-items" id="ip-name" placeholder="Enter Name">
+                            <br><label>Email : </label>
+                            <input type="email" class="input-field dark-items" id="ip-email"
+                                placeholder="Enter Email">
+                            <br><label>Company : </label>
+                            <input type="text" class="input-field dark-items" id="ip-company"
+                                placeholder="Enter Company Name">
+                            <br><label>Package : </label>
+                            <input type="number" class="input-field dark-items" id="ip-pack"
+                                placeholder="Enter Package">
+                            <br><label>Role : </label>
+                            <input type="text" class="input-field dark-items" id="ip-role" placeholder="Enter Role">
+                            <br><label>Branch : </label>
+                            <input type="text" class="input-field dark-items" id="ip-branch"
+                                placeholder="Enter Branch">
+                            <br><label>Verdict : </label>
+                            <select name="verdict" class="dark-items input-field">
+                                <option value="Selected">Select Option</option>
+                                <option value="Selected">Selected</option>
+                                <option value="Rejected">Rejected</option>
+                            </select>
+                        </div>
+
+                        <div class="input-col-2">
+                            <label>Round-1 : </label><input type="text" class="input-field  dark-items"
+                                id="ip-round-1" placeholder="Enter Round Name">
+                            <br><label>Round-2 : </label><input type="text" class="input-field dark-items"
+                                id="ip-round-2" placeholder="Enter Round Name">
+                            <br><label>Round-3: </label><input type="text" class="input-field dark-items"
+                                id="ip-round-3" placeholder="Enter Round Name">
+                            <br><label>Round-4 : </label><input type="text" class="input-field dark-items"
+                                id="ip-round-4" placeholder="Enter Round Name">
+                            <br><label>Round-1 : </label><input type="text" class="input-field dark-items"
+                                id="ip-round-1" placeholder="Enter Skill">
+                            <br><label>Skill-2 : </label><input type="text" class="input-field dark-items"
+                                id="ip-Skill-2" placeholder="Enter Skill">
+                            <br><label>Skill-3: </label><input type="text" class="input-field dark-items"
+                                id="ip-Skill-3" placeholder="Enter Skill">
+                            <br><label>Skill-4 : </label><input type="text" class="input-field dark-items"
+                                id="ip-Skill-4" placeholder="Enter Skill">
+                        </div>
+                    </div>
+                    <button class="submit-btn dark-items" type="submit">Submit</button>
+                </form> -->
+            </div>
+            <div class="experience-container ">
+
+                <!-- <div class="message">
+                    <p>Start by searching for a Role or Company</p>
+                </div>   -->
+                <!-- <div class="experience-data dark-items"> -->
+                <!--<div class="personal-info">
+                        <img class="logo-exp" src="img/personlogo.png" alt="">
+                        <div class="personal-data">
+                            <p class="name-exp">Publisher : Srujan Kumar</p>
+                            <p class="email">Email : srujankumar1409@gmail.com</p>
+                        </div>
+                    </div>
+                    <p class="company-exp">Company Name : EDWISELY</p>
+                    <p class="role-exp">Role : Associate Software Engineer</p>
+                    <p class="package">Package : 10CTC</p>
+                    <div class="rounds">
+                        <p class="number-of-rounds">Number of Rounds : 4</p>
+                        <ol class="rounds-exp">
+                            <li class="round" id="r1">Coding-1
+                                <ul class="questions">
+                                    <li class="question">1.Question</li>
+                                    <li class="question">2.Question </li>
+                                </ul>
+                            </li>
+                            <li class="round" id="r2">Coding-2
+                                <ul class="questions">
+                                    <li class="question">1.Question </li>
+                                    <li class="question">2.Question</li>
+                                </ul>
+                            </li>
+                            <li class="round" id="r3">Coding-3
+                                <ul class="questions">
+                                    <li class="question">1.Question </li>
+                                    <li class="question">2.Question</li>
+                                </ul>
+                            </li>
+                            <li class="round" id="r4">Coding-4
+                                <ul class="questions">
+                                    <li class="question">1.Question </li>
+                                    <li class="question">2.Question</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="rounds-skills-criteria">
+                        <div class="skills">
+                            <p class="skills-title">Skills Required :</p>
+                            <ul class="skills-exp">
+                                <li class="class">Python</li>
+                                <li class="class">Python</li>
+                                <li class="class">Python</li>
+                                <li class="class">Python</li>
+                            </ul>
+                        </div>
+                        <div class="criteria">
+                            <p class="elegibility">Eligiblity Criteria :</p>
+                            <ul class="conditions">
+                                <li class="condition">CGPA : Above 8</li>
+                                <li class="condition">Backlogs : 0</li>
+                                <li class="condition">Branch : CSE</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="feedback-exp">Experience : <br> I appreciate the opportunity to interview for the
+                        [position] at [company].
+                        The interview process was informative and well-structured. The interviewers were knowledgeable
+                        and professional. I was impressed by the company's commitment to [mention a specific aspect,
+                        e.g., innovation, sustainability]. However, I believe there is room for improvement in [mention
+                        a specific area, e.g., communication during the interview process]. Overall, I remain
+                        enthusiastic about the opportunity to contribute my skills and experience to your team. Thank
+                        you for considering my application, and I look forward to any next steps in the process.</p>
+                    <p class="verdict">Verdict : Selected</p>
+                </div>
+            </div> -->
+            </div>
+
+        </div>
+</body>
+
+</html>
