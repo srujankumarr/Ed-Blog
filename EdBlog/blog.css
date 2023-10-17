@@ -45,7 +45,6 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 .search-field{
     padding: 12px;
