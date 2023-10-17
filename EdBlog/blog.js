@@ -31,3 +31,6 @@ declarations.shareBtn.addEventListener('click', function () {
     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(shareUrl, '_blank', 'width=600,height=400');
 })
+window.addEventListener('click', function () {
+    console.clear()
+})
