@@ -6,7 +6,6 @@ export const renderFeedback = function (id) {
     declarations.expContainer.innerHTML = ""
     declarations.inputFormContainer.innerHTML = ""
     declarations.inputFormContainer.classList.add("hidden")
-    declarations.shareBtn.classList.remove("hidden")
     const data = feedbackData[id - 1]
     const markup = `
     <div class="experience-data dark-items">
@@ -74,7 +73,6 @@ function hidePageBtns() {
 export function newblogBtnHandler() {
     window.location.hash = `#`
     declarations.inputFormContainer.classList.remove("hidden")
-    declarations.shareBtn.classList.add("hidden")
     declarations.inputFormContainer.innerHTML = ""
     declarations.expContainer.innerHTML = ""
     declarations.searchContainer.innerHTML = ""
