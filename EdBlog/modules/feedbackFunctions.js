@@ -74,6 +74,7 @@ function hidePageBtns() {
 export function newblogBtnHandler() {
     window.location.hash = `#`
     declarations.inputFormContainer.classList.remove("hidden")
+    declarations.shareBtn.classList.add("hidden")
     declarations.inputFormContainer.innerHTML = ""
     declarations.expContainer.innerHTML = ""
     declarations.searchContainer.innerHTML = ""

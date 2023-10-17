@@ -26,9 +26,9 @@ declarations.searchContainer.addEventListener('click', function (e) {
     if (!id) return
     window.location.hash = `#${id}`
 })
-// declarations.shareBtn.addEventListener('click', function () {
-//     console.log('click');
-//     console.log(window.location.href);
-//     const facebookShareURL = `https://www.facebook.com/sharer/sharer.php?u=${(window.location.href)}`;
-//     window.open(facebookShareURL, "_blank");
-// })
+declarations.shareBtn.addEventListener('click', function () {
+    const url = encodeURIComponent('window.location.href');
+    const title = encodeURIComponent('Ed Blog');
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`;
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+})
