@@ -51,8 +51,8 @@
     padding: 12px;
     border-radius: 30px;
     padding-left: 20px;
-    width: 400px;
-    margin-top: 20px;
+    width: 500px;
+    margin-top: 10px;
     border: 1px solid #2c2e33;
 }
 .search-field:focus{
@@ -72,7 +72,7 @@
     outline: none;
     border: none;
     position: absolute;
-    transform: translate(-79px,20px);
+    transform: translate(-79px,10px);
     width:80px;
     font-size: var(--font-size);
 }
