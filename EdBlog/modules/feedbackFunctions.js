@@ -60,14 +60,16 @@ export const renderFeedback = function (id) {
                             </ul>
                         </div>
                     </div>
-                    <p class="feedback-exp">Experience : <br> I appreciate the opportunity to interview for the
+                    <h4 class="feedback-exp">Experience : <br> 
+                    <p class="feedback-txt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I appreciate the opportunity to interview for the
                     ${data.role} at ${data.company}.           
-                    <br>The interview experience during the college placement drive was both insightful and challenging. With four rounds to navigate, it provided a comprehensive evaluation of our skills and competencies.
-                    <br>The first round, typically a technical interview, assessed our subject knowledge and problem-solving abilities. It was a valuable opportunity to showcase our expertise.
-                    <br>The second round, often a group discussion, tested our communication and teamwork skills. It was a great platform to engage in meaningful discussions with peers.
-                    <br>The third round, which focused on behavioral and situational questions, assessed our soft skills, adaptability, and decision-making.
-                    <br>The final round, often an HR interview, allowed us to present our personal and professional aspirations while learning about the company's culture and values.
-                    <br>Overall, the four rounds provided a holistic view of our abilities and helped us grow as professionals. The feedback received from interviewers was constructive, contributing to our continuous improvement. It was a challenging but rewarding experience that prepared us for future career opportunities.</p>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The interview experience during the college placement drive was both insightful and challenging. With four rounds to navigate, it provided a comprehensive evaluation of our skills and competencies.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first round, typically a technical interview, assessed our subject knowledge and problem-solving abilities. It was a valuable opportunity to showcase our expertise.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The second round, often a group discussion, tested our communication and teamwork skills. It was a great platform to engage in meaningful discussions with peers.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The third round, which focused on behavioral and situational questions, assessed our soft skills, adaptability, and decision-making.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The final round, often an HR interview, allowed us to present our personal and professional aspirations while learning about the company's culture and values.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overall, the four rounds provided a holistic view of our abilities and helped us grow as professionals. The feedback received from interviewers was constructive, contributing to our continuous improvement. It was a challenging but rewarding experience that prepared us for future career opportunities.</p>
+                    </h4>
                     <p class="verdict">Verdict : ${data.verdict}</p>
                 </div>
     `
