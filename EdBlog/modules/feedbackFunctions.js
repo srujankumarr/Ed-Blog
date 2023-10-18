@@ -134,6 +134,7 @@ export function hashChangeHandler() {
     const urlId = window.location.hash.slice(1)
     if (!urlId) return
     renderFeedback(urlId)
+    declarations.expContainer.scrollIntoView({ behavior: "smooth" })
 }
 
 export function DOMContentLoadedHandler() {
