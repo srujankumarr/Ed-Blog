@@ -219,7 +219,7 @@ a{
 .question{
     width: 300px;
 }
-.share-btn{
+.share-btn,.share-btn-m{
     border: none;
     background: none;
     color: none;
