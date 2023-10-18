@@ -350,6 +350,9 @@ a{
         width: 300px;
         margin-right:15px ;
     }
+    .search-item:active{
+        transform: scale(1.1,1.1);
+    }
     .company-logo{
         width: 50px;
     }
