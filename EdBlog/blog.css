@@ -9,10 +9,9 @@
 }
 *{
     font-family: 'Nunito', sans-serif;
-  box-sizing: border-box;
-  font-weight: 600;
-  font-size: var(--font-size-small);
-  /* overflow: auto; */
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: var(--font-size-small);
 }
 .hidden{
     display: none;
@@ -129,9 +128,9 @@
     border-radius: 5px;
 }
 /* --------------------------------------Font Buttons--------------------------------------- */
-/* ---------------------------------------Header------------------------------------------  */
+/* ---------------------------------------Header Ends------------------------------------------  */
 
-/* Search Results  */
+/* ------------------------------------------Search Results--------------------------------------------------  */
 .main{
     display: flex;
     flex-wrap: wrap;
@@ -182,13 +181,12 @@ a{
     cursor: pointer;
 }
 
-/* Search Results  */
+/* ---------------------------------------------Search Results Ends ------------------------------------------------------------------- */
 
-/* Experience */
+/*------------------------------------------------- Experience -------------------------------------------------------------------*/
 .experience-data{
     border-radius: 20px;
     padding: 30px;
-    /* margin-right: 20px; */
     width: 900px;
 }
 .personal-info{
@@ -235,7 +233,7 @@ a{
 .share-btn:active{
     transform: translateY(3px);
 }
-/* Experience  */
+/*--------------------------------- Experience Ends ----------------------------------------------- */
 .spinner{
     width: 350px;
     height:200px;
@@ -262,7 +260,7 @@ a{
     text-decoration: none;
 }
 
-/* Form  */
+/*---------------------------------------------------- Form  -----------------------------------------------*/
 .input-container{
     border-radius: 15px;
     padding: 20px;
@@ -301,6 +299,7 @@ a{
 .submit-btn:active{
     transform: translateY(2px);
 }
+/*------------------------------------------------------------- Form Ends --------------------------------------------------------------*/
 .btn-m{
     display: none;
 }
@@ -423,7 +422,6 @@ a{
     }
 }
 @media (min-width: 601px) and (max-width: 920px) {
-    /* CSS styles for medium screens */
     .experience-data{
         width: 600px;
         margin-left: 35px;

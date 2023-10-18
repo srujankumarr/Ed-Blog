@@ -27,12 +27,12 @@ for (let id = 1; id <= 500; id++) {
     const randomRole = roles[Math.floor(Math.random() * roles.length)];
     const randomCompany = companies[Math.floor(Math.random() * companies.length)];
     const randomName = indianNames[Math.floor(Math.random() * indianNames.length)];
-    const nameInLowercase = randomName.replace(/ /g, '').toLowerCase(); // Generate email from name in lowercase
-    const email = `${nameInLowercase}@gmail.com`; // Generate email
-    const cgpa = (Math.random() * 2 + 7).toFixed(1); // Random CGPA above 7
-    const branch = id % 2 === 0 ? "Computer Science" : "Statistics"; // Alternating branches
-    const pack = packages[Math.floor(Math.random() * packages.length)]; // Random package
-    const verdict = id % 5 === 0 ? "Selected" : "Rejected"; // Alternating verdicts
+    const nameInLowercase = randomName.replace(/ /g, '').toLowerCase();
+    const email = `${nameInLowercase}@gmail.com`;
+    const cgpa = (Math.random() * 2 + 7).toFixed(1);
+    const branch = id % 2 === 0 ? "Computer Science" : "Statistics";
+    const pack = packages[Math.floor(Math.random() * packages.length)];
+    const verdict = id % 5 === 0 ? "Selected" : "Rejected";
 
     const feedback = {
         id: id,
@@ -91,11 +91,11 @@ const generateRandomPackage = () => packages[Math.floor(Math.random() * packages
 for (let id = 501; id <= 507; id++) {
     const randomRole = generateRandomRole();
     const randomCompany = generateRandomCompany();
-    const email = `srujankumar1409@gmail.com`; // Generate email using a pattern
-    const cgpa = (Math.random() * 2 + 7).toFixed(1); // Random CGPA above 7
-    const branch = id % 2 === 0 ? "Computer Science" : "Statistics"; // Alternating branches
-    const pack = generateRandomPackage(); // Random package
-    const verdict = id % 5 === 0 ? "Selected" : "Rejected"; // Alternating verdicts
+    const email = `srujankumar1409@gmail.com`;
+    const cgpa = (Math.random() * 2 + 7).toFixed(1);
+    const branch = id % 2 === 0 ? "Computer Science" : "Statistics";
+    const pack = generateRandomPackage();
+    const verdict = id % 5 === 0 ? "Selected" : "Rejected";
     const feedback = {
         id: id,
         name: 'Srujan Kumar',
@@ -138,7 +138,7 @@ for (let id = 501; id <= 507; id++) {
                     )
                 )
             ),
-        package: pack, // Add the package field
+        package: pack,
         verdict,
     };
 
