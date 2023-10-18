@@ -17,6 +17,8 @@ const fontBtn3 = document.querySelector('.font-btn-3')
 const fontBtn4 = document.querySelector('.font-btn-4')
 const shareBtn = document.querySelector('.share-btn')
 const resultsPerPage = 10
+const userBtnMob = document.querySelector('.btn-myblog-m')
+const shareBtnMob = document.querySelector('.share-btn-m')
 
 export const declarations = {
     root,
@@ -29,5 +31,6 @@ export const declarations = {
     fontBtn1, fontBtn2, fontBtn3, fontBtn4,
     resultsPerPage,
     submitFormBtn,
-    inputFormContainer, newblogBtn, shareBtn
+    inputFormContainer, newblogBtn, shareBtn,
+    shareBtnMob, userBtnMob
 }

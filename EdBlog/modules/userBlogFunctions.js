@@ -40,3 +40,10 @@ export function userBtnHandler() {
     renderUserResults(feedbackData)
     hidePageBtns()
 }
+
+//Share Btn Handler
+export function shareBtnHandler() {
+    const url = window.location.href
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+}

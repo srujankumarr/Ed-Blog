@@ -1,5 +1,5 @@
 import { declarations } from "./modules/declarations.js";
-import { userBtnHandler } from './modules/userBlogFunctions.js';
+import { userBtnHandler, shareBtnHandler } from './modules/userBlogFunctions.js';
 import { searchBtnHandler, prevBtnHandler, nextBtnHandler } from './modules/searchResultsFunctions.js';
 import { newblogBtnHandler, hashChangeHandler, DOMContentLoadedHandler } from "./modules/feedbackFunctions.js";
 import { modeBtnDarkHandler, modeBtnLightHandler } from "./modules/modes.js";
@@ -9,6 +9,7 @@ declarations.searchBtn.addEventListener('click', searchBtnHandler)
 declarations.nextBtn.addEventListener('click', nextBtnHandler)
 declarations.prevBtn.addEventListener('click', prevBtnHandler)
 declarations.userBtn.addEventListener('click', userBtnHandler)
+declarations.userBtnMob.addEventListener('click', userBtnHandler)
 declarations.modeBtnLight.addEventListener('click', modeBtnLightHandler)
 declarations.modeBtnDark.addEventListener('click', modeBtnDarkHandler)
 declarations.fontBtn1.addEventListener('click', fontBtn1Handler)
@@ -26,11 +27,8 @@ declarations.searchContainer.addEventListener('click', function (e) {
     if (!id) return
     window.location.hash = `#${id}`
 })
-declarations.shareBtn.addEventListener('click', function () {
-    const url = window.location.href
-    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-    window.open(shareUrl, '_blank', 'width=600,height=400');
-})
+declarations.shareBtn.addEventListener('click', shareBtnHandler)
+declarations.shareBtnMob.addEventListener('click', shareBtnHandler)
 window.addEventListener('click', function () {
     console.clear()
 })
