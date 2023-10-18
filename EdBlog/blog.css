@@ -302,3 +302,93 @@ a{
 .submit-btn:active{
     transform: translateY(2px);
 }
+
+
+
+@media (max-width: 400px) {
+    /* CSS styles for small screens */
+    *{
+        font-size: var(--font-size);
+    }
+    :root{
+        --font-size:12px;
+    }
+
+/* Header  */
+    .header{
+        /* flex-wrap: wrap; */
+        justify-content: c;
+        padding-bottom: 10px;
+    }
+    .search-field{
+        width: 280px;
+        margin-bottom: 10px;
+    }
+    .search-btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .search-field::placeholder{
+        font-size: 12px;
+    }
+    .btn-new-blog,.font-btn,.share-btn,.btn-mode-light,.btn-mode-dark{
+        display: none;
+    }   
+
+    .my-blog-btn:active{
+    transform: translateY(2px);
+    }
+/* Search Results  */
+    .search-item{
+        width: 300px;
+        margin-right:15px ;
+    }
+    .company-logo{
+        width: 60px;
+    }
+    .btn-pages{
+        font-size: var(--font-size);
+        width: 80px;
+    }
+    .search-results-container{
+        padding: 0;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .results{
+        margin-left: 0;
+    }
+    .data{
+        font-size: var(--font-size);
+    }
+/* Experience  */
+    .experience-data{
+        width: 360px;
+        margin-left: 5px;
+        margin-bottom: 100px;
+    }
+    .experience-data{
+        font-size: var(--font-size);
+    }
+    .logo-exp{
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .rounds-exp{
+        display: flex;
+        flex-direction: column;
+    }
+    #r2,#r4{
+        margin-left:0px ;
+    }
+
+    .input-container{
+        display: none;
+    }
+
+    .error{
+        margin: 0;
+    }
+}
