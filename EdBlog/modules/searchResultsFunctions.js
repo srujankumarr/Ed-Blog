@@ -1,5 +1,6 @@
 import { declarations } from './declarations.js'
 import { feedbackData, roles, companies } from './data.js'
+import { hidePageBtns } from './userBlogFunctions.js'
 let searchResults = []
 let page = 1
 
@@ -16,6 +17,7 @@ function renderSpinner(ele) {
 
 // Render Error 
 function renderError(ele, msg) {
+    hidePageBtns()
     ele.innerHTML = ""
     const markup = `
     <div class="error dark-items">

@@ -26,7 +26,7 @@ function renderUserResults(res) {
 }
 
 //Hide Page Btns
-function hidePageBtns() {
+export function hidePageBtns() {
     declarations.prevBtn.classList.add('hidden-btns')
     declarations.nextBtn.classList.add('hidden-btns')
 }
