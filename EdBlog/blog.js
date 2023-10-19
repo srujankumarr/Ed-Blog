@@ -14,6 +14,7 @@ declarations.nextBtn.addEventListener('click', nextBtnHandler)
 declarations.prevBtn.addEventListener('click', prevBtnHandler)
 
 //-------------------------------------- User Btn ---------------------------------
+userBtnHandler()
 declarations.userBtn.addEventListener('click', userBtnHandler)
 
 declarations.userBtnMob.addEventListener('click', userBtnHandler)
